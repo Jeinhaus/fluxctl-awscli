@@ -16,6 +16,3 @@ RUN apk add --update ca-certificates \
  && rm /var/cache/apk/*
 
 RUN pip install --user awscli==$AWS_CLI_VERSION
-
-ENTRYPOINT ["fluxctl"]
-CMD ["help"]
