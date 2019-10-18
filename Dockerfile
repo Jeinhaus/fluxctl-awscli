@@ -15,4 +15,4 @@ RUN apk add --update ca-certificates \
  && apk del --purge deps \
  && rm /var/cache/apk/*
 
-RUN pip install --user awscli==$AWS_CLI_VERSION
+RUN pip install --prefix /usr/local awscli==$AWS_CLI_VERSION
